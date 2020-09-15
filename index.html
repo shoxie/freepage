@@ -30,7 +30,7 @@
     </nav>
     <section
       id="hero"
-      class="w-screen min-h-screen bg-top bg-cover"
+      class="w-screen min-h-screen md:bg-top bg-left bg-cover"
       style="background-image: url('/images/banner1.png');"
     >
 
@@ -55,25 +55,31 @@
           <p class="pt-2 text-white">Xem thêm</p>
         </div>
       </div>
-      <div class="h-full w-full"> </div>
+      <div class="h-0 w-0 md:h-full md:w-full"> </div>
     </section>
     <section id="why-us" class="min-h-screen flex justify-center items-center flex-col pb-10">
-        <div class="w-screen flex justify-center items-center gap-20 pb-20">
-            <div class="text-center flex justify-center items-center flex-col">
-              <img src="./images/www1.png" alt="">
-              <h3 style="color:#9400FF" class="uppercase pt-10">tên miền tùy chỉnh</h3>
+        <div class="w-screen flex flex-col md:flex-row justify-center  gap-20 pb-20">
+            <div class="text-center flex  items-center flex-col">
+              <img src="./images/www1.png" class="w-20 h-20" alt="">
+              <div class="pt-10">
+              <h3 style="color:#9400FF" class="uppercase">tên miền tùy chỉnh</h3>
               <p class="text-black font-montserrat text-base pt-2 ">Đính kèm miền tùy chỉnh của riêng bạn<br/> hoặc sử dụng trên các miền phụ kiến trúc sư<br/> miễn phí.</p>
             </div>
-            <div class="text-center flex justify-center items-center flex-col">
-              <img src="./images/www2.png" alt="">
-              <h3 style="color:#9400FF" class="uppercase pt-10">bảo mật</h3>
-              <p class="text-black font-montserrat text-base pt-2">Trình tạo dễ sử dụng của chúng tôi giúp<br/> bạn tạo và khởi chạy một trang web đẹp<br/> nhanh chóng.</p>
             </div>
-            <div class="text-center flex justify-center items-center flex-col">
-              <img src="./images/www3.png" alt="">
-              <h3 style="color:#9400FF" class="uppercase pt-16">công cụ mạnh mẽ</h3>
+            <div class="text-center flex  items-center flex-col">
+              <img src="./images/www2.png" class="w-20 h-20 "  alt="">
+              <div class="pt-10">
+              <h3 style="color:#9400FF" class="uppercase">bảo mật</h3>
+              <p class="text-black font-montserrat text-base pt-2">Trình tạo dễ sử dụng của chúng tôi giúp<br/> bạn tạo và khởi chạy một trang web đẹp<br/> nhanh chóng.</p>
+            </div> 
+          </div>
+            <div class="text-center flex  items-center flex-col">
+              <img src="./images/www3.png"class="w-20 h-20 "  alt="">
+              <div class="pt-10">
+              <h3 style="color:#9400FF" class="uppercase">công cụ mạnh mẽ</h3>
               <p class="text-black font-montserrat text-base pt-2">Thiết kế và xây dựng các trang web chất<br/> lượng cao của riêng bạn. Dù là loại trang<br/>  web nào thì bạn cũng có thể làm điều đó với<br/> trình tạo trang web Kiến trúc sư. </p>
             </div>
+          </div>
         </div>
         <div style="background-image: url('./images/banner2.png');" class="bg-cover bg-no-repeat bg-center w-8/12 h-64 rounded-big justify-center items-center flex">
           <button style="background-color:#56009c" class="uppercase py-5 px-5 rounded-lg text-white text-2xl">
@@ -88,12 +94,12 @@
             <h1 class="font-bold font-montserrat text-5xl leading-15 pt-5 text-purple-700">Hãy giống như một<br/>chuyên gia ngay từ<br/>đầu.</h1>
             <p class="pt-10 font-montserrat text-black">Các mẫu từng đoạt giải thưởng của chúng tôi là cách đẹp nhất để<br/>trình bày ý tưởng của bạn trực tuyến. Nổi bật với trang web chuyên<br/>nghiệp, danh mục đầu tư hoặc cửa hàng trực tuyến.</p>
           </div>
-          <div>
+          <div class="hidden md:block">
             <img src="./images/Asset1.png" alt="">
           </div>
         </div>
         <div class="flex items-center justify-center pt-20 gap-32">
-          <div>
+          <div class="hidden md:block">
             <img src="./images/Asset2.png" alt="">
           </div>
           <div>
@@ -109,8 +115,8 @@
             <h1 class="font-bold font-montserrat text-5xl leading-15 pt-5 text-purple-700">Hoàn thành miễn phí</h1>
             <p class="pt-10 font-montserrat text-black">Bạn sẽ không cần phải bỏ ra chi phí để thuê Hosting, VPS, bạn<br/>không cần phải thuê đội ngũ thiết kế website, bạn có thể tạo<br/>website cho riêng mình một cách miễn phí !</p>
           </div>
-          <div>
-            <img src="./images/Asset3.png" alt="">
+          <div class="hidden md:block">
+              <img src="./images/Asset3.png" alt="">
           </div>
         </div>
     </section>
@@ -143,7 +149,7 @@
       </div>
       
     </div>
-      <div class="flex flex-col justify-center items-center w-1/3 mt-56">
+      <div class="flex flex-col justify-center items-center w-full md:w-1/3 mt-56">
         <div>
           <img src="./images/logo.png" alt="">
         </div>
